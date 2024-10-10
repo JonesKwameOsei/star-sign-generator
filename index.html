@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date & Time</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 class="page-header">Dates & Time in JS</h1>
+    <p class="time date">Today's date: <span id="currentDate"></span></p>
+    <p>Current time: <span id="currentTime"></span></p>
+    <button onclick="updateTime()" class="btn">Update Time</button>
+  <section class="section-content">
+    <h2 class="section-header">User Details & Star Sign</h2>
+    
+    <div class="form-container">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" required>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" required>
+            <option value="">Select...</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <button onclick="showStarSign()">Submit</button>
+    </div>
+
+    <p id="resultMessage"></p>
+  </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
